@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>chirp</title>
+  <title>Chirp</title>
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="icon" href="./assets/images/footer-logo.png">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -35,34 +35,44 @@
       }
     }    
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+
 </head>
 
 <body>
   <div class="bg-blueGradient ">
-    <div class=" pt-[33px] md:pt-[51px] pb-[57px] md:pb-[127px]">
-      <div class=" container max-w-[1128px] px-3 mx-auto ">
+    <div class=" pt-[33px] md:pt-[51px] pb-[47px] md:pb-[127px]">
+      <div class=" container max-w-[1155px] px-3 mx-auto ">
         <div class=" flex items-center justify-between">
-          <img class="sm:w-[134px] w-[100] h-[42px] sm:h-[55px]" src="./assets/images/navLogo.png" alt="Navlogo">
+          <img class="sm:w-[134px] w-[100] h-[42px] sm:h-[55px] cursor-pointer" src="./assets/images/navLogo.png"
+            alt="Navlogo">
           <button
-            class=" border border-transparent duration-300 hover:scale-95 hover:shadow-xl hover:bg-transparent hover:border hover:border-solid hover:border-grey flex gap-2 p-[10px_20px_10px_32px] bg-lightGreen rounded-[30px] ff-phudu"><span
-              class=" text-darkGreen  font-semibold uppercase">Coming soon</span><svg width="24" height="24"
-              viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M22.5878 12.8019L15.4114 15.4114L12.8019 22.5878C12.741 22.752 12.6313 22.8935 12.4876 22.9935C12.3438 23.0935 12.1729 23.1471 11.9979 23.1471C11.8228 23.1471 11.6519 23.0935 11.5082 22.9935C11.3644 22.8935 11.2547 22.752 11.1938 22.5878L8.58866 15.4114L1.41217 12.8019C1.24804 12.741 1.10648 12.6313 1.00651 12.4876C0.906548 12.3438 0.852966 12.1729 0.852966 11.9979C0.852966 11.8228 0.906548 11.6519 1.00651 11.5082C1.10648 11.3644 1.24804 11.2547 1.41217 11.1938L8.58866 8.58866L11.1981 1.41217C11.259 1.24804 11.3687 1.10648 11.5125 1.00651C11.6562 0.906548 11.8271 0.852966 12.0022 0.852966C12.1772 0.852966 12.3481 0.906548 12.4919 1.00651C12.6356 1.10648 12.7453 1.24804 12.8062 1.41217L15.4156 8.58866L22.5921 11.1981C22.7547 11.2603 22.8945 11.3704 22.993 11.5139C23.0915 11.6574 23.144 11.8275 23.1435 12.0015C23.143 12.1755 23.0896 12.3453 22.9904 12.4883C22.8911 12.6312 22.7507 12.7406 22.5878 12.8019Z"
-                fill="#E5F6EC" />
-              <path
-                d="M22.8816 10.3919L16.0803 7.91967L13.6081 1.11842C13.4863 0.790143 13.2669 0.507024 12.9794 0.307093C12.6919 0.107163 12.3502 0 12 0C11.6498 0 11.3081 0.107163 11.0206 0.307093C10.7331 0.507024 10.5137 0.790143 10.3919 1.11842L7.91967 7.91967L1.11842 10.3919C0.790143 10.5137 0.507024 10.7331 0.307093 11.0206C0.107163 11.3081 0 11.6498 0 12C0 12.3502 0.107163 12.6919 0.307093 12.9794C0.507024 13.2669 0.790143 13.4863 1.11842 13.6081L7.91967 16.0814L10.3919 22.8816C10.5137 23.2099 10.7331 23.493 11.0206 23.6929C11.3081 23.8928 11.6498 24 12 24C12.3502 24 12.6919 23.8928 12.9794 23.6929C13.2669 23.493 13.4863 23.2099 13.6081 22.8816L16.0814 16.0803L22.8816 13.6081C23.2099 13.4863 23.493 13.2669 23.6929 12.9794C23.8928 12.6919 24 12.3502 24 12C24 11.6498 23.8928 11.3081 23.6929 11.0206C23.493 10.7331 23.2099 10.5137 22.8816 10.3919ZM15.1176 14.6051C15 14.648 14.8931 14.7161 14.8046 14.8046C14.7161 14.8931 14.648 15 14.6051 15.1176L12 22.2812L9.39485 15.1176C9.35202 15 9.28394 14.8931 9.19541 14.8046C9.10688 14.7161 9.00004 14.648 8.8824 14.6051L1.71878 12L8.8824 9.39485C9.00004 9.35202 9.10688 9.28394 9.19541 9.19541C9.28394 9.10688 9.35202 9.00004 9.39485 8.8824L12 1.71878L14.6051 8.8824C14.648 9.00004 14.7161 9.10688 14.8046 9.19541C14.8931 9.28394 15 9.35202 15.1176 9.39485L22.2812 12L15.1176 14.6051Z"
-                fill="#00434F" />
-            </svg>
+            class="p-[7px_19px_10px_30px] relative overflow-hidden btn hover:bg-white duration-300 md:w-[200px] w-[174px] h-[44px] z-30 flex items-center justify-end hover:border-2 hover:border-solid hover:border-darkGreen border border-transperent uppercase bg-lightGreen rounded-[30px] text-darkGreen gap-2 leading-[20px] relative font-semibold ff-phudu  md:text-[20px] text-[15px]">
+            <span class="ps-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M22.5878 12.8019L15.4114 15.4114L12.8019 22.5878C12.741 22.752 12.6313 22.8935 12.4876 22.9935C12.3438 23.0935 12.1729 23.1471 11.9979 23.1471C11.8228 23.1471 11.6519 23.0935 11.5082 22.9935C11.3644 22.8935 11.2547 22.752 11.1938 22.5878L8.58866 15.4114L1.41217 12.8019C1.24804 12.741 1.10648 12.6313 1.00651 12.4876C0.906548 12.3438 0.852966 12.1729 0.852966 11.9979C0.852966 11.8228 0.906548 11.6519 1.00651 11.5082C1.10648 11.3644 1.24804 11.2547 1.41217 11.1938L8.58866 8.58866L11.1981 1.41217C11.259 1.24804 11.3687 1.10648 11.5125 1.00651C11.6562 0.906548 11.8271 0.852966 12.0022 0.852966C12.1772 0.852966 12.3481 0.906548 12.4919 1.00651C12.6356 1.10648 12.7453 1.24804 12.8062 1.41217L15.4156 8.58866L22.5921 11.1981C22.7547 11.2603 22.8945 11.3704 22.993 11.5139C23.0915 11.6574 23.144 11.8275 23.1435 12.0015C23.143 12.1755 23.0896 12.3453 22.9904 12.4883C22.8911 12.6312 22.7507 12.7406 22.5878 12.8019Z"
+                  fill="#E5F6EC" />
+                <path
+                  d="M22.8816 10.3919L16.0803 7.91967L13.6081 1.11842C13.4863 0.790143 13.2669 0.507024 12.9794 0.307093C12.6919 0.107163 12.3502 0 12 0C11.6498 0 11.3081 0.107163 11.0206 0.307093C10.7331 0.507024 10.5137 0.790143 10.3919 1.11842L7.91967 7.91967L1.11842 10.3919C0.790143 10.5137 0.507024 10.7331 0.307093 11.0206C0.107163 11.3081 0 11.6498 0 12C0 12.3502 0.107163 12.6919 0.307093 12.9794C0.507024 13.2669 0.790143 13.4863 1.11842 13.6081L7.91967 16.0814L10.3919 22.8816C10.5137 23.2099 10.7331 23.493 11.0206 23.6929C11.3081 23.8928 11.6498 24 12 24C12.3502 24 12.6919 23.8928 12.9794 23.6929C13.2669 23.493 13.4863 23.2099 13.6081 22.8816L16.0814 16.0803L22.8816 13.6081C23.2099 13.4863 23.493 13.2669 23.6929 12.9794C23.8928 12.6919 24 12.3502 24 12C24 11.6498 23.8928 11.3081 23.6929 11.0206C23.493 10.7331 23.2099 10.5137 22.8816 10.3919ZM15.1176 14.6051C15 14.648 14.8931 14.7161 14.8046 14.8046C14.7161 14.8931 14.648 15 14.6051 15.1176L12 22.2812L9.39485 15.1176C9.35202 15 9.28394 14.8931 9.19541 14.8046C9.10688 14.7161 9.00004 14.648 8.8824 14.6051L1.71878 12L8.8824 9.39485C9.00004 9.35202 9.10688 9.28394 9.19541 9.19541C9.28394 9.10688 9.35202 9.00004 9.39485 8.8824L12 1.71878L14.6051 8.8824C14.648 9.00004 14.7161 9.10688 14.8046 9.19541C14.8931 9.28394 15 9.35202 15.1176 9.39485L22.2812 12L15.1176 14.6051Z"
+                  fill="#00434F" />
+              </svg>
+            </span>
+            <span class=" absolute duration-300 w-[85%] btn-one top-[48%] left-[0] translate-y-[-50%] ff-phudu">
+              Coming soon
+            </span>
+            <span class="absolute duration-300 btn-two w-[85%] top-[145%] left-[0] translate-y-[-50%] ff-phudu ">
+              Coming soon
+            </span>
           </button>
         </div>
       </div>
     </div>
-    <div class="flex grow justify-end items-end pb-[72px] max-sm:pt-[56px]">
-      <div class="container px-3 mx-auto max-w-[1128px]">
+    <div class="flex grow justify-end items-end pb-[80px] md:pb-[120px] max-sm:pt-[56px]">
+      <div class="container px-3 mx-auto max-w-[1155px]">
         <div class="flex items-end gap-10">
           <h1
-            class="ff-phudu text font-bold text-[90px] sm:text-[96px] md:text-[110px] lg:text-[170px] leading-[96px] md:leading-[110px] lg:leading-[170px] text-darkGreen">
+            class="ff-phudu text font-bold text-[73px] sm:text-[96px] md:text-[110px] lg:text-[170px] leading-[73px] sm:leading-[96px] md:leading-[110px] lg:leading-[170px] text-darkGreen">
             THE
           </h1>
           <div
@@ -79,30 +89,38 @@
           </p>
         </div>
         <div class="flex items-end">
-          <h2
-            class="ff-phudu font-bold text text-[90px] sm:text-[96px] md:text-[110px] lg:text-[170px] flex items-center gap-3 leading-[96px] md:leading-[110px] lg:leading-[170px] text-darkGreen">
+          <div
+            class="ff-phudu font-bold text text-[73px] sm:text-[96px] md:text-[110px] lg:text-[170px] flex items-center gap-3 leading-[73px] sm:leading-[96px] md:leading-[110px] lg:leading-[170px] text-darkGreen">
             SALES
-            <span><svg class=" w-[71px] lg:h-[127px] md:w-[100px] lg:w-[140px] pt-[19px]" width="127" height="119"
-                viewBox="0 0 127 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <span><svg class=" w-[53px] sm:w-[71px] lg:h-[127px] md:w-[100px] lg:w-[140px] pt-[15px] sm:pt-[19px]"
+                width="127" height="119" viewBox="0 0 127 119" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M0 114.113V118.316L23.923 118.316L27.6587 75.0414C28.3052 62.7938 37.5727 51.806 53.3058 53.7889L63.3634 38.7886V118.316L63.7125 118.316H91.4502V114.113L68.0833 0.809339L23.3669 0.641235L0 114.113ZM126.368 0.641235H99.8069V118.316H126.368V0.641235ZM38.3629 70.119C38.3629 73.7116 41.3323 76.6044 45.1159 76.6044C48.7798 76.6044 51.7492 73.7816 51.7492 70.119C51.7492 66.4564 48.8995 63.5403 45.1159 63.5403C41.3323 63.5403 38.3629 66.5264 38.3629 70.119Z"
                   fill="#00434F" />
               </svg>
             </span>
             <div class=" hidden md:block">
-              <button
-                class=" w-[267px] ml-[40px] mt-[91px] border border-transparent duration-300 hover:scale-95 hover:shadow-xl hover:bg-transparent hover:border hover:border-solid hover:border-grey ff-phudu font-semibold text-[20px] leading-[20px] text-darkgreen flex items-center gap-3 py-[10px] px-[20px] rounded-[30px] bg-yellow">
-                subscribe for more
-                <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="24" width="24" height="24" rx="12" transform="rotate(90 24 0)" fill="#00434F" />
-                    <path
-                      d="M11.5433 18.9147C11.7955 19.1669 12.2045 19.1669 12.4567 18.9147L16.5665 14.8048C16.8187 14.5526 16.8187 14.1437 16.5665 13.8915C16.3143 13.6393 15.9054 13.6393 15.6532 13.8915L12 17.5448L8.34677 13.8915C8.09456 13.6393 7.68566 13.6393 7.43346 13.8915C7.18125 14.1437 7.18125 14.5526 7.43346 14.8048L11.5433 18.9147ZM11.3542 5.54193L11.3542 18.4581L12.6458 18.4581L12.6458 5.54193L11.3542 5.54193Z"
-                      fill="#FFCA4C" />
-                  </svg>
-                </span>
-              </button>
+              <div class=" hidden md:block ps-[43px] pt-24 text">
+                <button
+                  class="p-[7px_19px_10px_30px] btn hover:bg-white justify-end duration-300 w-[267px] min-h-[44px] flex items-center overflow-hidden z-30 hover:bg-white hover:border hover:border-darkGreen border text-darkGreen hover:border-darkGreen border-transperent uppercase bg-yellow rounded-[30px] text-darkGreen gap-3 leading-[20px] relative font-semibold ff-phudu sm:text-[20px] text-[16px] sm:leading-[20px] leading-[10px]">
+                  <span class="pe-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <rect x="24" width="24" height="24" rx="12" transform="rotate(90 24 0)" fill="#00434F" />
+                      <path
+                        d="M11.5433 18.9147C11.7955 19.1669 12.2045 19.1669 12.4567 18.9147L16.5665 14.8048C16.8187 14.5526 16.8187 14.1437 16.5665 13.8915C16.3143 13.6393 15.9054 13.6393 15.6532 13.8915L12 17.5448L8.34677 13.8915C8.09456 13.6393 7.68566 13.6393 7.43346 13.8915C7.18125 14.1437 7.18125 14.5526 7.43346 14.8048L11.5433 18.9147ZM11.3542 5.54193L11.3542 18.4581L12.6458 18.4581L12.6458 5.54193L11.3542 5.54193Z"
+                        fill="#FFCA4C" />
+                    </svg>
+                  </span>
+                  <span class=" absolute duration-300 w-[85%] btn-one top-[45%] left-[0] translate-y-[-50%] ff-phudu ">
+                    subscribe for more
+                  </span>
+                  <span class="absolute duration-300 btn-two w-[85%] top-[145%] left-[0] translate-y-[-50%] ff-phudu ">
+                    subscribe for more
+                  </span>
+                </button>
+              </div>
             </div>
-          </h2>
+          </div>
         </div>
         <div class="flex items-end md:pt-4 gap-6 ">
           <div
@@ -112,7 +130,7 @@
           </div>
 
           <p
-            class="ff-phudu font-bold text-[90px] sm:text-[96px] md:text-[110px] lg:text-[170px] text leading-[96px] md:leading-[110px] lg:leading-[170px] text-darkGreen">
+            class="ff-phudu font-bold text-[73px] sm:text-[96px] md:text-[110px] lg:text-[170px] text leading-[73px] sm:leading-[96px] md:leading-[110px] lg:leading-[170px] text-darkGreen">
             CO-PILOT
           </p>
         </div>
@@ -123,7 +141,7 @@
         </p>
         <div class="md:hidden mt-[32px]">
           <button
-            class="ff-phudu border border-transparent duration-300 hover:scale-95 hover:shadow-xl hover:bg-transparent hover:border hover:border-solid hover:border-grey font-semibold text-[20px] leading-[20px] text-darkgreen text flex items-center gap-3 py-[10px] px-[20px] rounded-[30px] bg-yellow">
+            class="ff-phudu w-[267px] h-[44px] flex justify-center border border-transparent duration-300 hover:scale-95 hover:shadow-xl hover:bg-transparent hover:border hover:border-solid hover:border-grey font-semibold text-[20px] leading-[20px] text-darkgreen text flex items-center gap-3 py-[10px] px-[20px] rounded-[30px] bg-yellow">
             subscribe for more
             <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="24" width="24" height="24" rx="12" transform="rotate(90 24 0)" fill="#00434F" />
@@ -137,63 +155,80 @@
       </div>
     </div>
   </div>
-  </div>
   <section class="mb-[32px]">
-    <div class="px-3 sm:px-[32px]">
+    <div class="px-3 sm:px-[32px] max-w-[1440px] mx-auto">
       <div class=" grid lg:grid-cols-2 gap-6">
         <div
-          class=" bg-skyBlue1 p-[48px_15px] max-lg:p-[48px_24px] max-xl:p-[85px_25px_85px_25px] xl:p-[127px_110px_138px_110px] w-full max-w-[676px] rounded-[32px] sm:h-[380px] lg:h-[561px] mx-auto">
+          class="bg-skyBlue1 p-[48px_15px] max-lg:p-[48px_24px] max-xl:p-[85px_25px_85px_25px] xl:p-[127px_110px_138px_110px] w-full max-w-[676px] rounded-[32px] sm:h-[400px] lg:h-[561px] mx-auto">
           <h2
-            class="uppercase text-center ff-phudu text-lightGrey text-[32px] lg:text-5xl font-bold pb-[28px] md:pb-[40px]">
-            subscribe for more</h2>
-          <div class=" mb-4 md:mb-[20px]">
-            <label for="html">
-              <input type="text"
-                class=" border border-solid focus:border-lightGrey placeholder:focus:font-semibold focus:outline-lightGray w-full outline-none rounded-[30px] p-[16px_24px] placeholder:text-black placeholder:poppins poppins font-normal placeholder:text-base text-base font-normal "
-                placeholder="Your Name">
+            class="uppercase text-center ff-phudu text-lightGrey text-[28px] lg:text-5xl leading-[28px] lg:leading-5xl font-bold pb-[28px] md:pb-[40px] text2">
+            subscribe for more
+          </h2>
+          <form id="subscriptionForm" onsubmit="return validateForm()">
+            <div class="mb-4 md:mb-[20px]">
+              <label for="name">
+                <input type="text" id="name"
+                  class="border border-solid focus:border-lightGrey placeholder:focus:font-semibold focus:outline-lightGray w-full outline-none rounded-[30px] p-[16px_24px] placeholder:text-black placeholder:poppins poppins font-normal placeholder:text-base text-base font-normal"
+                  placeholder="Your Name">
+              </label>
+            </div>
+
+            <label for="email">
+              <input type="email" id="email"
+                class="border border-solid focus:border-lightGrey focus:outline-lightGray placeholder:focus:font-semibold w-full outline-none rounded-[30px] p-[16px_24px] placeholder:text-black placeholder:poppins poppins placeholder:font-normal placeholder:text-base text-base font-normal"
+                placeholder="Your Email">
             </label>
-          </div>
 
-          <label for="html">
-            <input type="email"
-              class=" border border-solid focus:border-lightGrey focus:outline-lightGray placeholder:focus:font-semibold w-full outline-none rounded-[30px] p-[16px_24px] placeholder:text-black placeholder:poppins poppins placeholder:font-normal placeholder:text-base text-base font-normal "
-              placeholder="Your Email">
-          </label>
-
-          <div class=" flex justify-between items-center pt-[40px]">
-            <p class=" poppins font-normal text-sm text-gray sm:block hidden ">Make your sales teams superhuman.<span
-                class=" lg:block">Launching soon. Sign up for updates..</span></p>
-            <p class=" poppins font-normal text-sm text-gray sm:hidden max-sm:max-w-[184px]">Lorem ipsum dolor sit amet
-              cons. Augue odio sit scelerisque viverra.</p>
-            <button
-              class=" border border-transparent duration-300 hover:scale-95 hover:shadow-xl hover:bg-transparent hover:border hover:border-solid hover:border-grey flex gap-2 p-[10px_32px_10px_32px] bg-yellow font-semibold text-xl rounded-[30px] ff-phudu">Submit</button>
-          </div>
+            <div class="flex flex-col md:flex-row gap-4 lg:gap-0 sm:mt-0 justify-between items-center pt-[40px]">
+              <p class="poppins font-normal text-sm text-gray sm:block hidden">Make your sales teams superhuman.<span
+                  class="lg:block">Launching soon. Sign up for updates.</span></p>
+              <p class="poppins font-normal text-sm text-gray sm:hidden max-sm:max-w-[184px] text-center">Lorem ipsum
+                dolor sit amet cons. Augue odio sit scelerisque viverra.</p>
+                <button id="submitBtn"
+                class="sm:py-[10px] mt-3 ff-phudu mt-0 btn mx-auto sm:mx-0 flex items-center justify-center sm:w-[124px] w-full h-[40px] py-[2px] sm:px-[32px] px-[17px] z-30 hover:bg-white hover:border hover:border-darkGreen text-darkGreen border-transparent uppercase bg-yellow rounded-[30px] font-semibold ff-phudu relative overflow-hidden sm:text-[20px] text-[16px] sm:leading-[20px] leading-[10px]"
+                type="submit">
+                <span class=" absolute duration-300 w-[85%] btn-one top-[45%] left-[7%] translate-y-[-50%] ">
+                  Submit
+                </span>
+                <span class="absolute duration-300 btn-two w-[85%] top-[145%] left-[7%] translate-y-[-50%] ">
+                  Submit
+                </span> 
+                <span class="absolute inset-0 flex items-center justify-center transition-transform transform translate-y-full bg-white rounded-md hover:scale-[300] duration-700 z-[-20]"></span>
+              </button>
+            </div>
+          </form>
         </div>
         <div class="bg-greenGradient rounded-[32px] relative w-full h-[315px] lg:h-[561px] max-w-[676px] mx-auto">
-          <div
-            class="rounded-[100px] p-[18px_29px_24px_30px] lg:p-[39px_59px_46px_56px] bg-skyBlue absolute top-[7%] lg:left-[-8%] left-[-3%]">
-            <p
-              class="uppercase ff-phudu font-bold text-[45px] max-sm:text-[45px] text-[53px] xl:text-[80px] text-white leading-[48px] lg:leading-[80px] text-white">
-              Soar quickly</p>
+          <div data-tilt>
+            <div id="tilt-button"
+              class="rounded-[100px] overflow-hidden cursor-pointer p-[20px_28px] xl:p-[39px_59px_46px_56px] bg-skyBlue absolute top-[7%] lg:left-[-8%] left-[-3%] btn1">
+              <p
+                class="uppercase ff-phudu font-bold text-[38px] xl:text-[80px] text-white leading-[38px] lg:leading-[80px] text-white">
+                Soar quickly</p>
+            </div>
           </div>
-          <div
-            class="rounded-[100px]  p-[19px_26px_23px_25px] lg:p-[40px_56px_45px_56px] bg-transperantGradient absolute top-[30%] left-[30%] border border-solid border-white z-10 backdrop-blur-lg">
-            <p
-              class="uppercase ff-phudu font-bold text-[45px] max-sm:text-[45px] text-[53px] xl:text-[80px] text-white leading-[48px] lg:leading-[80px] text-white ">
-              with our</p>
+          <div data-tilt>
+            <div id="tilt-button2"
+              class="rounded-[100px] overflow-hidden cursor-pointer p-[20px_26px] xl:p-[40px_56px_45px_56px] bg-transperantGradient absolute top-[30%] left-[30%] border border-solid border-white z-10 backdrop-blur-lg btn2">
+              <p
+                class="uppercase ff-phudu font-bold text-[38px] xl:text-[80px] text-white leading-[48px] lg:leading-[80px] text-white ">
+                with our</p>
+            </div>
           </div>
-          <div
-            class="rounded-[100px] p-[19px_32px_23px_29px] lg:p-[38px_60px_47px_65px] bg-yellow absolute bottom-[7%] left-[5%]">
-            <p
-              class="uppercase ff-phudu font-bold text-[45px] max-sm:text-[45px] text-[53px] xl:text-[80px] text-white leading-[48px] lg:leading-[80px] flex items-center gap-1">
-              <span><svg class=" w-[48px] md:w-[61px] h-[38px] md:h-[56px]" width="61" height="56" viewBox="0 0 61 56"
-                  fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0 54V56H11.3847L13.1625 35.4061C13.4702 29.5777 17.8804 24.3487 25.3676 25.2924L30.1539 18.1539V56H30.32H43.52V54L32.4 0.0799983L11.12 0L0 54ZM60.1369 0H47.4969V56H60.1369V0ZM18.2565 33.0636C18.2565 34.7733 19.6696 36.15 21.4702 36.15C23.2138 36.15 24.6269 34.8066 24.6269 33.0636C24.6269 31.3207 23.2707 29.9329 21.4702 29.9329C19.6696 29.9329 18.2565 31.354 18.2565 33.0636Z"
-                    fill="white" />
-                </svg>
-              </span> co-pilot
-            </p>
+          <div data-tilt>
+            <div id="tilt-button3"
+              class="rounded-[100px] overflow-hidden cursor-pointer p-[20px_28px] xl:p-[38px_60px_47px_65px] bg-yellow absolute bottom-[7%] left-[5%] btn3">
+              <p
+                class="uppercase ff-phudu font-bold text-[38px] xl:text-[80px] text-white leading-[48px] lg:leading-[80px] flex items-center gap-1">
+                <span><svg class=" w-[30px] md:w-[61px] h-[28px] md:h-[56px]" width="61" height="56" viewBox="0 0 61 56"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0 54V56H11.3847L13.1625 35.4061C13.4702 29.5777 17.8804 24.3487 25.3676 25.2924L30.1539 18.1539V56H30.32H43.52V54L32.4 0.0799983L11.12 0L0 54ZM60.1369 0H47.4969V56H60.1369V0ZM18.2565 33.0636C18.2565 34.7733 19.6696 36.15 21.4702 36.15C23.2138 36.15 24.6269 34.8066 24.6269 33.0636C24.6269 31.3207 23.2707 29.9329 21.4702 29.9329C19.6696 29.9329 18.2565 31.354 18.2565 33.0636Z"
+                      fill="white" />
+                  </svg>
+                </span> co-pilot
+              </p>
+            </div>
           </div>
           <a class="absolute top-[4%] right-[12%]" href=""><svg class="w-[37px] lg:w-[66px] h-[37px] lg:h-[66px]"
               viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -272,20 +307,18 @@
     </div>
   </section>
   <footer class="bg-whiteGradient">
-    <div class="container mx-auto max-w-[1128px] pt-[32px] md:pt-[55px] pb-[40px] md:pb-[54px]">
-      <div class=" grid md:grid-cols-2 lg:grid-cols-3">
-        <div class=" flex items-center justify-center lg:justify-start lg:justify-start pb-4 ">
+    <div class="container mx-auto max-w-[1155px] pt-[32px] md:pt-[55px] pb-[40px] md:pb-[54px] px-3">
+      <div class=" flex justify-between flex-col lg:flex-row gap-6 lg:gap-0">
+        <div class=" flex items-center justify-center lg:justify-start lg:justify-start gap-4 ">
           <img class=" cursor-pointer" src="./assets/images/footer-logo.png" alt="footer-logo">
-          <p class="poppins font-normal text-sm text-grey ml-[14px] hidden lg:block">Make your sales teams
-            superhuman.<span class=" block">Chirp. The Sales AI Co-Pilot.</span></p>
-          <p class="poppins font-normal text-sm text-grey ml-[14px] block lg:hidden max-w-[288px]">Lorem ipsum dolor sit
-            amet consectetur. Augue odio sit scelerisque viverra.</p>
+          <p class="poppins font-normal text-sm text-grey max-w-[288px]">Make your sales teams
+            superhuman. <span class="lg:block"></span>Chirp. The Sales AI Co-Pilot.</p>
         </div>
-        <div class=" flex items-center justify-center  order-3 lg:order-2">
+        <div class=" flex items-center justify-center order-3 lg:order-2">
           <p class=" poppins font-normal text-sm text-grey">© <span id="currentYear"></span> Chirp Labs.
             All rights reserved.</p>
         </div>
-        <div class=" flex items-center justify-center lg:justify-end pb-4 lg:pb-0 gap-[18px] order-2 lg:order-3">
+        <div class=" flex items-center justify-center lg:justify-end  gap-[18px] order-2 lg:order-3">
           <a class=" duration-300 hover:scale-110" href="https://in.linkedin.com/" target="_blank"><svg width="32"
               height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -318,8 +351,48 @@
       </div>
     </div>
   </footer>
+  <button onclick="scrollToTop()" id="backToTopBtn"
+    class="fixed bottom-4 right-4 bg-gray-800 text-white px-2 py-2 rounded-full shadow-md hidden">
+    Top
+  </button>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+  <script src="tilt.jquery.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", (event) => {
+      const tiltElements = ["#tilt-button", "#tilt-button2", "#tilt-button3"];
+      tiltElements.forEach(selector => {
+        VanillaTilt.init(document.querySelector(selector), {
+          max: 25,
+          speed: 400,
+          glare: true,
+          "max-glare": 0.5,
+        });
+      });
+    });
+  </script>
+  <script>
+    function validateForm() {
+      var name = document.getElementById('name').value.trim();
+      var email = document.getElementById('email').value.trim();
 
+      if (name === '' || email === '') {
+        alert('Please fill in all fields.');
+        return false;
+      }
+
+      if (!validateEmail(email)) {
+        alert('Please enter a valid email address.');
+        return false;
+      }
+
+      return true;
+    }
+
+    function validateEmail(email) {
+      var re = /\S+@\S+\.\S+/;
+      return re.test(email);
+    }
+  </script>
   <script>
     document.getElementById("currentYear").innerText =
       new Date().getFullYear();
@@ -338,11 +411,33 @@
     }
 
     gsap.from(".text", { opacity: 0, y: 100, duration: 1, delay: 0.5, stagger: 0.2, ease: "bounce.out" });
+    gsap.from(".text2", { opacity: 0, y: -100, duration: 1, delay: 2.5, stagger: 0.2, ease: "bounce.out" });
+    gsap.from(".btn1", { opacity: 0, y: -100, duration: 1, delay: 2.5, stagger: 0.2, ease: "bounce.out" });
+    gsap.from(".btn2", { opacity: 0, x: 100, duration: 1, delay: 3, stagger: 0.2, ease: "bounce.out" });
+    gsap.from(".btn3", { opacity: 0, y: 100, duration: 1, delay: 3.5, stagger: 0.2, ease: "bounce.out" });
     gsap.from(".bg-lightgreen", { scaleX: 0, scaleY: 0, duration: 1.5, ease: "elastic.out(1, 0.75)", delay: 0.2 });
     gsap.from(".bg-lightgreen", { duration: 2, delay: 2, ease: "bounce.in" });
     gsap.from(".bg-skyblue1", { duration: 3, delay: 3, ease: "bounce.in" });
   </script>
+  <script>
+    // Function to scroll to top smoothly
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
 
+    // Show/hide back to top button based on scroll position
+    window.addEventListener('scroll', function () {
+      var backToTopBtn = document.getElementById('backToTopBtn');
+      if (window.pageYOffset > 100) {
+        backToTopBtn.classList.remove('hidden');
+      } else {
+        backToTopBtn.classList.add('hidden');
+      }
+    });
+  </script>
 </body>
 
 </html>

@@ -8,3 +8,9 @@
 }
 
 
+.btn:hover .btn-one{
+        top: -100%;
+    }
+    .btn:hover .btn-two{
+        top: 45%;
+    }
