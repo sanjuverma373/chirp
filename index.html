@@ -420,15 +420,12 @@
     gsap.from(".bg-skyblue1", { duration: 3, delay: 3, ease: "bounce.in" });
   </script>
   <script>
-    // Function to scroll to top smoothly
     function scrollToTop() {
       window.scrollTo({
         top: 0,
         behavior: 'smooth'
       });
     }
-
-    // Show/hide back to top button based on scroll position
     window.addEventListener('scroll', function () {
       var backToTopBtn = document.getElementById('backToTopBtn');
       if (window.pageYOffset > 100) {
