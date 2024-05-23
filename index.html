@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chirp</title>
+  <!-- css link -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- icons-link -->
   <link rel="icon" href="./assets/images/footer-logo.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -26,7 +28,7 @@
           backgroundImage: {
             blueGradient: "linear-gradient(180deg, #E8F6F9 0%, #FFFFFF 100%)",
             greenGradient: 'linear-gradient(180deg, #006E2C 0%, #005723 100%)',
-            transperantGradient: 'radial-gradient(116.39% 236.06% at 0% 0%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)',
+            transperantGradient: 'linear-gradient(112.83deg, rgba(255, 255, 255, 0.47) 0%, rgba(255, 255, 255, 0) 110.84%)',
             whiteGradient: 'linear-gradient(180deg, #FFF6E2 0%, #FFFFFF 100%)',
 
           }
@@ -40,6 +42,8 @@
 </head>
 
 <body>
+
+  <!-- hero section --> 
   <div class="bg-blueGradient ">
     <div class=" pt-[33px] md:pt-[51px] pb-[47px] md:pb-[127px]">
       <div class=" container max-w-[1155px] px-3 mx-auto ">
@@ -47,7 +51,7 @@
           <img class="sm:w-[134px] w-[100] h-[42px] sm:h-[55px] cursor-pointer" src="./assets/images/navLogo.png"
             alt="Navlogo">
           <button
-            class="p-[7px_19px_10px_30px] relative overflow-hidden btn hover:bg-white duration-300 md:w-[200px] w-[174px] h-[44px] z-30 flex items-center justify-end hover:border-2 hover:border-solid hover:border-darkGreen border border-transperent uppercase bg-lightGreen rounded-[30px]  gap-2  relative  ff-phudu">
+            class="p-[7px_19px_10px_30px] relative overflow-hidden btn hover:bg-white duration-300 w-[200px] h-[44px] z-30 flex items-center justify-end hover:border-2 hover:border-solid hover:border-darkGreen border border-transperent uppercase bg-lightGreen rounded-[30px]  gap-2  relative  ff-phudu">
             <span class="ps-2">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -155,6 +159,7 @@
       </div>
     </div>
   </div>
+  <!-- input validation section  -->
   <section class="mb-[32px]">
     <div class="px-3 sm:px-[32px] max-w-[1440px] mx-auto">
       <div class=" grid lg:grid-cols-2 gap-6">
@@ -168,14 +173,14 @@
             <div class="mb-4 md:mb-[20px]">
               <label for="name">
                 <input required type="text" id="name"
-                  class="border border-solid focus:border-lightGrey placeholder:focus:font-semibold focus:outline-lightGray w-full outline-none rounded-[30px] p-[16px_24px] placeholder:text-black placeholder:poppins poppins font-normal placeholder:text-base text-base font-normal"
+                  class="border border-solid border-lightGreen focus:border-lightGrey placeholder:focus:font-semibold focus:outline-lightGray w-full outline-none rounded-[30px] p-[16px_24px] placeholder:text-black placeholder:poppins poppins font-normal placeholder:text-base text-base font-normal"
                   placeholder="Your Name">
               </label>
             </div>
 
             <label for="email">
               <input required type="email" id="email"
-                class="border border-solid focus:border-lightGrey focus:outline-lightGray placeholder:focus:font-semibold w-full outline-none rounded-[30px] p-[16px_24px] placeholder:text-black placeholder:poppins poppins placeholder:font-normal placeholder:text-base text-base font-normal"
+                class="border border-solid border-lightGreen focus:border-lightGrey focus:outline-lightGray placeholder:focus:font-semibold w-full outline-none rounded-[30px] p-[16px_24px] placeholder:text-black placeholder:poppins poppins placeholder:font-normal placeholder:text-base text-base font-normal"
                 placeholder="Your Email">
             </label>
 
@@ -306,6 +311,7 @@
       </div>
     </div>
   </section>
+  <!-- footer section  -->
   <footer class="bg-whiteGradient">
     <div class="container mx-auto max-w-[1155px] pt-[32px] md:pt-[55px] pb-[40px] md:pb-[54px] px-3">
       <div class=" flex justify-between flex-col lg:flex-row gap-6 lg:gap-0">
@@ -351,11 +357,14 @@
       </div>
     </div>
   </footer>
+  <!-- backtotop section -->
   <button onclick="scrollToTop()" id="backToTopBtn"
     class="fixed bottom-4 right-4 bg-gray-800 text-white px-2 py-2 rounded-full shadow-md hidden">
     Top
   </button>
+  <!-- gsap-link  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+  <!-- tilt-link -->
   <script src="tilt.jquery.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", (event) => {
@@ -370,6 +379,7 @@
       });
     });
   </script>
+  <!-- input-validation-script -->
   <script>
     function validateForm() {
       var name = document.getElementById('name').value.trim();
@@ -393,9 +403,13 @@
       return re.test(email);
     }
   </script>
+  <!-- current-date or gsap -->
   <script>
+    // current-year 
     document.getElementById("currentYear").innerText =
       new Date().getFullYear();
+
+      // gsap script
 
     function handleScrollAnimations() {
       const sections = document.querySelectorAll('.animate-section');
@@ -410,16 +424,17 @@
       });
     }
 
-    gsap.from(".text", { opacity: 0, y: 100, duration: 1, delay: 0.5, stagger: 0.2, ease: "bounce.out" });
-    gsap.from(".text2", { opacity: 0, y: -100, duration: 1, delay: 2.5, stagger: 0.2, ease: "bounce.out" });
-    gsap.from(".btn1", { opacity: 0, y: -100, duration: 1, delay: 2.5, stagger: 0.2, ease: "bounce.out" });
-    gsap.from(".btn2", { opacity: 0, x: 100, duration: 1, delay: 3, stagger: 0.2, ease: "bounce.out" });
-    gsap.from(".btn3", { opacity: 0, y: 100, duration: 1, delay: 3.5, stagger: 0.2, ease: "bounce.out" });
+    gsap.from(".text", { opacity: 0, y: 100, duration: 1, delay: 0.5, stagger: 0.2, });
+    gsap.from(".text2", { opacity: 0, y: -100, duration: 1, delay: 2.5, stagger: 0.2, });
+    gsap.from(".btn1", { opacity: 0, y: -100, duration: 1, delay: 2.5, stagger: 0.2, });
+    gsap.from(".btn2", { opacity: 0, x: 100, duration: 1, delay: 3, stagger: 0.2, });
+    gsap.from(".btn3", { opacity: 0, y: 100, duration: 1, delay: 3.5, stagger: 0.2, });
     gsap.from(".icons", { scaleX: 0, scaleY: 0, duration: 1.5, ease: "elastic.out(1, 0.75)", delay: 2 });
     gsap.from(".bg-lightgreen", { scaleX: 0, scaleY: 0, duration: 1.5, ease: "elastic.out(1, 0.75)", delay: 0.2 });
     gsap.from(".bg-lightgreen", { duration: 2, delay: 2, ease: "bounce.in" });
     gsap.from(".bg-skyblue1", { duration: 3, delay: 3, ease: "bounce.in" });
   </script>
+  <!-- backtotop  -->
   <script>
     function scrollToTop() {
       window.scrollTo({
