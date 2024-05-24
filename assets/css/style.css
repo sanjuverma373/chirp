@@ -17,3 +17,9 @@
     .btn:hover .btn-two{
         top: 45%;
     }
+    @media (min-width:1023.9px) {
+        .mt-61{
+                padding-top: 61px;
+        }
+        
+    }
